@@ -1,0 +1,1 @@
+# myriderate_django
