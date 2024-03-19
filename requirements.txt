@@ -11,7 +11,7 @@ django-progressive-web-app
 gunicorn
 MarkupSafe
 pillow
-psycopg2
+psycopg2-binary
 pycparser
 pyOpenSSL
 sqlparse
