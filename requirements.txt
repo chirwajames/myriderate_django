@@ -8,6 +8,7 @@ Django==3.2.1
 django-crispy-forms
 django-extensions
 django-progressive-web-app
+gunicorn
 MarkupSafe
 pillow
 psycopg2
