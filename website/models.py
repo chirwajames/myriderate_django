@@ -29,7 +29,7 @@ class DriverProfile(models.Model):
     lastname = models.CharField(max_length=50)
     #install pillow for images
     image = models.ImageField(default='default.jpg')
-    username = models.CharField(max_length=100)
+    username = models.CharField(max_length=100, null=True)
     email = models.CharField(max_length=50)
     rate = models.IntegerField(null=True)
     password = models.CharField(max_length=100, null=True)
