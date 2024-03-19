@@ -138,14 +138,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         #'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': 'postgres',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': '2sixMarch93',
-        'HOST': '127.0.0.1',
-        'PORT': '5434',
+        'PASSWORD': 'sLATvkWJchSRcKhnboVLTLGXBKcfipVu',
+        'HOST': 'postgres.railway.internal',
+        'PORT': '19247',
     }
 }
-DATABASES["default"] = dj_database_url.parse("postgres://myriderate_django_user:hCpa0Fbv1Nj1o1AOMeIQ73DUYATzRjVE@dpg-cno020a0si5c73aul2k0-a.oregon-postgres.render.com/myriderate_django")
+
+#DATABASES["default"] = dj_database_url.parse("postgres://myriderate_django_user:hCpa0Fbv1Nj1o1AOMeIQ73DUYATzRjVE@dpg-cno020a0si5c73aul2k0-a.oregon-postgres.render.com/myriderate_django")
 GDAL_LIBRARY_PATH = r'C:\OSGeo4W\bin\gdal307'
 
 # Password validation
@@ -183,6 +184,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 LOGIN_URL = '/login/'
