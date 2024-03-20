@@ -94,7 +94,7 @@ PWA_APP_START_URL = 'login'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
-        'src': 'media/pwa_pic.png',
+        'src': 'media/app.png',
         'sizes': '755x607',
         'purpose': 'any'
     }
