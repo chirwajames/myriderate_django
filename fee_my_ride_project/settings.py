@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'fee_my_ride_project.wsgi.application'
 
 
 
-PWA_APP_NAME = 'fee_my_ride'
+PWA_APP_NAME = 'My Ride Fee'
 PWA_APP_DESCRIPTION = "FeeMyRide PWA"
 PWA_APP_THEME_COLOR = '#000000'
 PWA_APP_BACKGROUND_COLOR = '#ffffff'
