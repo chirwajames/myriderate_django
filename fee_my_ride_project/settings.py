@@ -27,7 +27,7 @@ PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'website/static/website/assets/
 SECRET_KEY = 'django-insecure-szx0!l)jj+(b+13qno^z^^&rw)x0^%&_&&cqa(ect32#8s6w(i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -94,7 +94,7 @@ PWA_APP_START_URL = 'login'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
-        'src': 'media/app.png',
+        'src': 'media/pwa_pic.png',
         'sizes': '512x512',
         'purpose': 'any'
     }
