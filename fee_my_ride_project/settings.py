@@ -95,7 +95,7 @@ PWA_APP_START_URL = 'login'
 PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
-        'src': 'media/istockphoto.jpg',
+        'src': 'media/logo.jpg',
         'sizes': '612x612',
         'purpose': 'any'
     }
@@ -110,8 +110,8 @@ PWA_APP_ICONS_APPLE = [
 
 PWA_APP_SCREENSHOTS = [
     {
-        'src': 'media/app.png',
-        'sizes': '512x512',
+        'src': 'media/logo.jpg',
+        'sizes': '500x500',
         'type': 'image/png',
         'label': 'homescreen'
     },
