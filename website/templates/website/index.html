@@ -29,7 +29,7 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link active" href="{% url 'homepage' %}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}"><i class="fas fa-user"></i><span>Profile</span></a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="{% url 'daily_log' %}"><i class="fas fa-table"></i><span>Daily Report</span></a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="{% url 'daily_log' %}" style="display:none;"><i class="fas fa-table"></i><span>Daily Report</span></a></li>
                     {% if user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'my_logout' %}"><i class="far fa-user-circle"></i><span>Logout</span></a></li>
                     {% else %}
@@ -144,7 +144,8 @@
                         {% endif %}
                     </div>
                     <div>
-                        <h3 class="text-dark mb-0"><small>&nbsp;Current Rate /Km:&nbsp;&nbsp;</small><small id="taxi_rate">&nbsp;{{ user.driverprofile.rate }}</small> </h3>
+                        <!--h3 class="text-dark mb-0"><small>&nbsp;Current Rate /Km:&nbsp;&nbsp;</small><small id="taxi_rate">&nbsp;{{ user.driverprofile.rate }}</small> </h3-->
+                        <!--h3 class="text-dark mb-0"><small>&nbsp;Current Rate /Km:&nbsp;&nbsp;</small><small id="taxi_rate">&nbsp;15</small> </h3-->
                     </div>
                     <div class="text-center"></div>
                     <div class="d-sm-flex justify-content-between align-items-center mb-4"></div>
@@ -183,7 +184,7 @@
                             </div><button class="btn btn-outline-primary btn-sm text-success" type="submit" style="margin-bottom: 20px;">Calculate Travel Fee</button>
 
                         </form>
-                        <button class="btn btn-outline-primary btn-sm text-success" type="button" id= "end_trip" style="margin-bottom: 20px;">End Trip</button>
+                        <button class="btn btn-outline-primary btn-sm text-success" type="button" id= "end_trip" style="margin-bottom: 20px; display:none;">End Trip</button>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-md-6 col-xl-3 mb-4">
