@@ -29,7 +29,7 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link" href="{% url 'homepage' %}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
                     <li class="nav-item"><a class="nav-link active" href="{% url 'profile' %}"><i class="fas fa-user"></i><span>Profile</span></a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="{% url 'daily_log' %}"><i class="fas fa-table"></i><span>Daily Report</span></a></li>
+                    <li class="nav-item" style="display:none;"><a class="nav-link disabled" href="{% url 'daily_log' %}"><i class="fas fa-table"></i><span>Daily Report</span></a></li>
                     {% if user.is_authenticated %}
                     <li class="nav-item"><a class="nav-link" href="{% url 'login' %}"><i class="far fa-user-circle"></i><span>Logout</span></a></li>
                     {% else %}
@@ -135,7 +135,7 @@
                 </nav>
                 <div class="container-fluid">
 
-                    <h3 class="text-dark mb-4"><span>&nbsp;{{ user.driverprofile.rate }} &nbsp; Rands</span> /KM</h3>
+                    <h3 style="display:none;"class="text-dark mb-4"><span>&nbsp;{{ user.driverprofile.rate }} &nbsp; Rands</span> /KM</h3>
 
                     <div class="row mb-3">
                         <div class="col-lg-4">
@@ -166,9 +166,9 @@
                                     <div class="border rounded-0" style="margin-bottom: 5px;"></div>
                                     <form class="form-inline" method="POST" action="{% url 'profile' %}">
                                         {% csrf_token %}
-                                        <h4 class="small font-weight-bold">Set Rate / Kilometer<span class="float-right">
+                                        <!--h4 class="small font-weight-bold">Set Rate / Kilometer<span class="float-right">
                                         <input class="form-control form-control-sm" type="number" style="margin-left: 20px;" value="0.00" name="driver_rate">
-                                        <button class="btn btn-sm" type="submit" style="background-color: #a8fbce;">Save&nbsp;<i class="far fa-check-circle border-primary"></i></button></span></h4>
+                                        <button class="btn btn-sm" type="submit" style="background-color: #a8fbce;">Save&nbsp;<i class="far fa-check-circle border-primary"></i></button></span></h4-->
                                     </form>
 
                                 </div>
@@ -261,7 +261,7 @@
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Copyright © Brand 2023</span></div>
+                    <div class="text-center my-auto copyright"><span>Copyright © KAMPRO 2024</span></div>
                 </div>
             </footer>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
