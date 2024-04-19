@@ -96,7 +96,7 @@ PWA_APP_STATUS_BAR_COLOR = 'default'
 PWA_APP_ICONS = [
     {
         'src': 'media/logo.jpg',
-        'sizes': '612x612',
+        'sizes': '512x512',
         'purpose': 'any'
     }
 ]
@@ -112,7 +112,7 @@ PWA_APP_SCREENSHOTS = [
     {
         'src': 'media/logo.jpg',
         'sizes': '500x500',
-        'type': 'image/png',
+        'type': 'image/jpg',
         'label': 'homescreen'
     },
     {
@@ -126,7 +126,7 @@ PWA_APP_SCREENSHOTS = [
 ]
 PWA_APP_SPLASH_SCREEN = [
     {
-         'src': 'media/default.jpg',
+         'src': 'media/logo.jpg',
         'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)'
     }
 ]
